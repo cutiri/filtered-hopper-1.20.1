@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "filteredhopper",
+	"version": "${version}",
+	"name": "Filtered Hopper",
+	"description": "This is a Filtered Hopper mod, made by cutiri.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/filteredhopper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cutiri.filteredhopper.FilteredHopper"
+		],
+		"client": [
+			"com.cutiri.filteredhopper.FilteredHopperClient"
+		],
+		"fabric-datagen": [
+			"com.cutiri.filteredhopper.FilteredHopperDataGenerator"
+		]
+	},
+	"mixins": [
+		"filteredhopper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
