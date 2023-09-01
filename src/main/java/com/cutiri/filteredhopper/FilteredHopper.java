@@ -1,5 +1,8 @@
 package com.cutiri.filteredhopper;
 
+import com.cutiri.filteredhopper.block.ModBlocks;
+import com.cutiri.filteredhopper.item.ModItemGroups;
+import com.cutiri.filteredhopper.item.ModItems;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +19,13 @@ public class FilteredHopper implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		//registering the ItemsGroup
+		ModItemGroups.registerItemsGroup();
 
+		//registering the Blocks
+		ModBlocks.registerModBlocks();
+
+		//registering the Items
+		ModItems.registerModItems();
 	}
 }
